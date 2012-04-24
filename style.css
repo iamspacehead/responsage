@@ -1,0 +1,50 @@
+/*
+Theme Name: Responsage Theme
+Theme URI: http://www.spaceheadconcepts.com
+Description: A test theme to show how to implement Responsage in your theme
+Author: Spacehead Concepts
+Author URI: http://www.spaceheadconcepts.com
+Version: 0.1
+*/
+
+body {
+	background:#eee;
+}
+
+body, input, textarea {
+	color: #373737;
+	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	line-height: 1.625;
+}
+
+p {
+	margin:0 0 10px 0;
+}
+
+h1, h2, h3 {
+	margin:0 0 10px 0;
+}
+
+#page {
+	background:#fff;
+	min-width:440px;
+	max-width:740px;
+	width:60%;
+	margin:20px auto;
+}
+
+header {
+	background:#dedede;
+	padding:30px 40px;
+}
+
+.entry-content {
+	padding:20px 40px;
+}
+
+pre {
+	display:block;
+	font-size:12px;
+	
+}
