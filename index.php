@@ -53,37 +53,16 @@ if (have_posts()) : while (have_posts()) : the_post();
             <h3>Adding Sizes</h3>
 			<p>Simply add another array with the relevant data to add an image size to your theme.</p>
 			<pre>
-/* You can define additional non-default image sizes using $ra_image_size_array
-* and define their mobile counter part in $ra_m_image_size_array
+ //Called in the functions.php file	
+ 	ra_add_image_size("widget", 400, 400, 250, 250, false);
+  	ra_add_image_size("post", 1200, 900, 640, 480, false);
+  	ra_add_image_size("gallery-portfolio", 300, 300, 300, 300, true);
 
-$ra_image_size_array = array(
-array(	'size' 		=> 	'blog',
-	'width' 	=> 	'500'	,
-	'height' 	=> 	'500'	)
-);
-*/
-
-/* Define the mobile image sizes using $ra_m_image_size_array.
-* Make sure to add additional sizes when adding additional image sizes above.
-*/	
-		
-$ra_m_image_size_array = array(
-array(	'size' 		=> 	'full'	,
-	'width' 	=> 	'960'	,
-	'height' 	=> 	'960'	),
-
-array(	'size' 		=> 	'large'	,
-	'width' 	=> 	'576'	,
-	'height' 	=> 	'576'	),
-
-array(	'size' 		=> 	'medium',
-	'width' 	=> 	'288'	,
-	'height' 	=> 	'288'	),
-		
-array(	'size' 		=> 	'widget',
-	'width' 	=> 	'250'	,
-	'height' 	=> 	'250'	)
-);
+//Update the default WordPress sizes to include mobile equivalents
+	ra_update_image_size("full", 960,960,false);
+    	ra_update_image_size("large", 576,576,false);
+   	ra_update_image_size("medium", 288,288,false);
+    	ra_update_image_size("thumbnail", 100,100,true);
 			
 			</pre>
 		</div><!-- .entry-content -->
