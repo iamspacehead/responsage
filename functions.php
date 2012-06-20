@@ -10,7 +10,7 @@
 
 if ( !function_exists( 'responsage_init' ) ) {
 
-	define( 'RESPONSAGE_DIRECTORY', get_template_directory() . '/functions/responsage/' );
+	define( 'RESPONSAGE_DIRECTORY', get_template_directory() . '/responsage/' );
 
 	require_once (RESPONSAGE_DIRECTORY . 'init.php');
 
